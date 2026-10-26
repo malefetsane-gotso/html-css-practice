@@ -39,12 +39,17 @@ ol, ul {
 
 ul {
   font-size: 1.8rem;
+  gap: 3.2rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1.8rem;
+  padding: 2.4rem;
+}
+
+.logo-and-links {
+  gap: 5.6rem;
 }
 
 div {
