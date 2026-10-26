@@ -34,10 +34,20 @@ body {
 /* Remove list markers globally (Optional) */
 ol, ul {
   list-style: none;
+  display: flex;
 }
 
 ul {
   font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
 }
 
 /* .container {
