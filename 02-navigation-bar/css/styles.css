@@ -27,6 +27,7 @@ a {
 body {
   font-family: 'Epilogue', sans-serif;
   font-weight: 500;
+  color: #272727;
 
 }
 
@@ -36,7 +37,7 @@ ol, ul {
 }
 
 ul {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 /* .container {
