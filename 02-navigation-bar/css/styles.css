@@ -61,6 +61,12 @@ div {
   gap: 5.6rem;
 }
 
+.register-button {
+  border: 0.1rem solid #272727;
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
 /* .container {
   width: 90%;          Takes up 90% of the screen width on mobile
   max-width: 1200px;
