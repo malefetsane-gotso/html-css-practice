@@ -24,14 +24,18 @@ a {
 }
 
 /* Add font family style and background color for the page */
-/* body {
-  font-family: 'Kumbh Sans', sans-serif;
+body {
+  font-family: 'Epilogue', sans-serif;
 
-} */
+}
 
 /* Remove list markers globally (Optional) */
 ol, ul {
   list-style: none;
+}
+
+ul {
+  font-size: 18px;
 }
 
 /* .container {
