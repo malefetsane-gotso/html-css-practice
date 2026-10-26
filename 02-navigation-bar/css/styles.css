@@ -35,6 +35,7 @@ body {
 ol, ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 ul {
@@ -42,18 +43,22 @@ ul {
   gap: 3.2rem;
 }
 
+.dropdown-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 2.4rem;
-}
-
-.logo-and-links {
-  gap: 5.6rem;
+  align-items: center;
 }
 
 div {
   display: flex;
+  gap: 5.6rem;
 }
 
 /* .container {
