@@ -27,7 +27,7 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #272727;
+  background-color: #F2EAE2;
 }
 
 
@@ -44,6 +44,10 @@ ol, ul {
   margin: 0 auto;
 }
 
+.product-card {
+    background-color: #fff;
+}
+
 h1, .current-price {
     font-weight: 700;
     font-family: 'Fraunces', serif;
@@ -51,4 +55,21 @@ h1, .current-price {
 
 p, .original-price {
     font-size: 1.4rem;
+    color: #6c728a;
+}
+
+h1 {
+    color: #1c232b;
+}
+
+.current-price {
+    color: #3c8067;
+}
+
+.btn-label {
+    color: #fff;
+}
+
+button {
+    background-color: #3c8067;
 }
