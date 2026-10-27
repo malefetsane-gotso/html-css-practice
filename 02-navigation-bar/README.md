@@ -1,4 +1,4 @@
-# 01 - Profile Card
+# 02 - Navigation Bar
 
 ## Concepts practiced
 *Flexbox

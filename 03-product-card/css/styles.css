@@ -1,0 +1,45 @@
+/* Change root element font size, as 16px is not easy to work with and 10px is easy to work with */
+/* So the mathematics behind this 62.5% * 16px = 10px, so 1rem = 10px now*/
+/* So if we wanted 24px on an element we want it to be responsive that will be 24px/10px = 2.4rem */
+/* Working with a base of 10px for rem units makes it simpler when thinking about sizing elements */
+html {
+  font-size: 62.5%;
+}
+
+/* Reset box-sizing globally for predictable sizing (Total width or height of an element as a whole) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and padding from everything */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the default underline on anchor tags */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Add font family style and background color for the page */
+body {
+  /* font-family: 'Epilogue', sans-serif; */
+  /* font-weight: 500;
+  color: #272727; */
+
+}
+
+/* Remove list markers globally (Optional) */
+ol, ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  /* width: 90%;          Takes up 90% of the screen width on mobile */
+  max-width: 1200px;
+  margin: 0 auto;
+}

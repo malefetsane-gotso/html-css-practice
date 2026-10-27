@@ -20,8 +20,9 @@ design, and document my progress through consistent hands-on coding.
 *Visual Studio Code
 
 # projects
--EXERCISE: [View Completed Exercises](01-profile-card/) - FOCUS: box model properties, html semantics - STATUS: completed
--EXERCISE: 02-navigation-bar - FOCUS: flexbox, postioning, spacing - STATUS: practicing
+-EXERCISE: 01-profile-card - FOCUS: box model properties, html semantics - STATUS: completed
+-EXERCISE: 02-navigation-bar - FOCUS: flexbox, postioning, spacing - STATUS: completed
+-EXERCISE: 03-product-card - FOCUS: Image positioning, flexbox, typography, colors - STATUS: In progress
 
 This will be updated as I complete new exercises
 
