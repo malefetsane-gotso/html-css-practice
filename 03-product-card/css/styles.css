@@ -24,12 +24,13 @@ a {
 }
 
 /* Add font family style and background color for the page */
-body {
-  /* font-family: 'Epilogue', sans-serif; */
-  /* font-weight: 500;
-  color: #272727; */
+/* body {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 500;
+  color: #272727;
 
-}
+} */
+
 
 /* Remove list markers globally (Optional) */
 ol, ul {
