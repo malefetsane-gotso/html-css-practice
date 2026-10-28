@@ -87,6 +87,12 @@ button {
     padding: 3.2rem;
 }
 
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
 .container {
   width: 90%;          /* Takes up 90% of the screen width on mobile*/
   max-width: 1200px;
