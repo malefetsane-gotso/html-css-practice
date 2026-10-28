@@ -42,6 +42,8 @@ ol, ul {
     display: flex;
     background-color: #fff;
     width: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 h1, .current-price {
@@ -69,21 +71,28 @@ h1 {
 
 .btn-label {
     color: #fff;
+    font-weight: 700;
+    margin-left: 0.8rem;
 }
 
 button {
     background-color: #3c8067;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid #3c8067;
+    border-radius: 10px;
 }
 
 #product {
     width: 100%;
-    max-width: 26rem;
+    max-width: 27rem;
+    object-fit: cover; /* Keeps proportions and fills the container */
+    object-position: center; /* Centers the crop */
 }
 
 .product-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 2rem;
     padding: 3.2rem;
 }
 
