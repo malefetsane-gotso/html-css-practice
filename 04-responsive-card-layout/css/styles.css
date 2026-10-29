@@ -24,9 +24,9 @@ a {
 }
 
 /* Add font family style and background color for the page */
-/* body {
-  font-family: 'Kumbh Sans', sans-serif;
-} */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
 
 /* Remove list markers globally (Optional) */
 ol, ul {
@@ -37,4 +37,8 @@ ol, ul {
   width: 90%;          /* Takes up 90% of the screen width on mobile */
   max-width: 1200px;
   margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Big Shoulders', sans-serif;
 }
