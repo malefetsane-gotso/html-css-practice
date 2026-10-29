@@ -44,4 +44,25 @@ ol, ul {
 h1 {
     font-family: 'Big Shoulders', sans-serif;
     font-weight: 700;
+    color: #f2f2f2;
+}
+
+button {
+    background-color: #f2f2f2;
+}
+
+p {
+    color: #FFFC;
+}
+
+.sedans {
+    background-color: #E38826;
+}
+
+.suvs {
+    background-color: #006970;
+}
+
+.luxury {
+    background-color: #004241;
 }
