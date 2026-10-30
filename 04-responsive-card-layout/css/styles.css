@@ -52,6 +52,19 @@ button {
     padding: 1.2rem 2.8rem;
     border-radius: 171px;
     border: none;
+    font-weight: 700;
+}
+
+.sedans > button {
+  color: #E38826;
+}
+
+.suvs > button {
+  color: #006970;
+}
+
+.luxury > button {
+  color: #004241;
 }
 
 p {
@@ -92,4 +105,12 @@ section {
   width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
 }
