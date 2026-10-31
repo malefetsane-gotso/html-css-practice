@@ -23,7 +23,7 @@ design, and document my progress through consistent hands-on coding.
 -EXERCISE: 01-profile-card - FOCUS: box model properties, html semantics - STATUS: completed
 -EXERCISE: 02-navigation-bar - FOCUS: flexbox, postioning, spacing - STATUS: completed
 -EXERCISE: 03-product-card - FOCUS: Image positioning, flexbox, typography, colors - STATUS: completed
--EXERCISE: 04-responsive-card-layout - FOCUS: css grid, responsive layout and positioning - STATUS: in progress
+-EXERCISE: 04-responsive-card-layout - FOCUS: css grid, responsive layout and positioning - STATUS: completed
 
 This will be updated as I complete new exercises
 
