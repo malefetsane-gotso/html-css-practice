@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Contact Form</title>
 </head>
@@ -12,21 +15,31 @@
             <h1>Contact Us</h1>
             
             <div class="user-name-and-last-name">
-                <label for="user-name">First Name *</label>
-                <input id="user-name" type="text" name="user-name" maxlength="15" minlength="4" required>
+                <div class="name">
+                    <label for="user-name">First Name *</label>
+                    <input id="user-name" type="text" name="user-name" maxlength="15" minlength="4" required>
+                </div>
                 
-                <label for="user-last-name">Last Name *</label>
-                <input id="user-last-name" type="text" name="user-last-name" maxlength="15" minlength="4" required>
+                <div class="surname">
+                    <label for="user-last-name">Last Name *</label>
+                    <input id="user-last-name" type="text" name="user-last-name" maxlength="15" minlength="4" required>
+                </div>
             </div>
             
-            <label for="user-email">Email *</label>
-            <input id="user-email" type="email" name="user-email">
-
-            <input id="general-enquiry" type="radio" name="query" value="enquiry">
-            <label for="general-enquiry">General Enquiry</label>
             
-            <input id="support-request" type="radio" name="query" value="request">
-            <label for="support-request">Support Request</label>
+            <div class="email">
+                <label for="user-email">Email *</label>
+                <input id="user-email" type="email" name="user-email">
+            </div>
+             
+            <fieldset> <!-- It tells the browser (and assistive technologies like screen readers) that everything inside this container belongs to the same topic. -->
+                <legend>Query Type *</legend> <!-- t provides the overarching "umbrella text" or question for the grouped inputs. -->
+                <input id="general-enquiry" type="radio" name="query" value="enquiry">
+                <label for="general-enquiry">General Enquiry</label>
+            
+                <input id="support-request" type="radio" name="query" value="request">
+                <label for="support-request">Support Request</label>
+            </fieldset>
 
             <label for="message">Message *</label>
             <textarea id="message" name="user-message" rows="5" cols="30" required></textarea>
