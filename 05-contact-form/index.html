@@ -13,20 +13,28 @@
             
             <div class="user-name-and-last-name">
                 <label for="user-name">First Name *</label>
-                <input id="user-name" type="text" name="user-name">
+                <input id="user-name" type="text" name="user-name" maxlength="15" minlength="4" required>
                 
                 <label for="user-last-name">Last Name *</label>
-                <input id="user-last-name" type="text" name="user-last-name">
+                <input id="user-last-name" type="text" name="user-last-name" maxlength="15" minlength="4" required>
             </div>
             
             <label for="user-email">Email *</label>
             <input id="user-email" type="email" name="user-email">
+
+            <input id="general-enquiry" type="radio" name="query" value="enquiry">
+            <label for="general-enquiry">General Enquiry</label>
             
+            <input id="support-request" type="radio" name="query" value="request">
+            <label for="support-request">Support Request</label>
 
             <label for="message">Message *</label>
-            <textarea id="message" name="user-message" rows="5" cols="30"></textarea>
+            <textarea id="message" name="user-message" rows="5" cols="30" required></textarea>
 
-            
+            <input id="agree-terms" type="checkbox" name="agree" required>
+            <label for="agree-terms">I consent to being contacted bt the team</label>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
