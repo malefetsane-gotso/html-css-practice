@@ -8,7 +8,22 @@
 </head>
 <body>
     <div class="content-wrapper">
+        <form action="https://httpbin.org" method="post"> <!--- Action is like where is the librarian going to place the book, 'the location', in which category (maths, science) -->
+            <h1>Contact Us</h1>
+            
+            <div class="user-name-and-last-name">
+                <label for="user-name">First Name *</label>
+                <input id="user-name" type="text" name="user-name">
+                
+                <label for="user-last-name">Last Name *</label>
+                <input id="user-last-name" type="text" name="user-last-name">
+            </div>
+            
+            <label for="user-email">Email *</label>
+            <input id="user-email" type="email" name="user-email">
+            
 
+        </form>
     </div>
 </body>
 </html>
