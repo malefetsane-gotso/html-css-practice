@@ -27,6 +27,7 @@ a {
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  background-color: #87A3A6;
 }
 
 /* Remove list markers globally (Optional) */
@@ -63,12 +64,15 @@ h1 {
 
 #user-name, #user-last-name {
     margin-top: 0.4rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .email {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    align-items: start;
 }
 
 legend {
@@ -88,15 +92,11 @@ legend {
 .message {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
 #message {
   margin-top: 0.4rem;
-}
-
-.user-input {
-  display: flex;
-  flex-direction: column;
 }
 
 .user-agrees {
@@ -104,6 +104,22 @@ legend {
   gap: 1.6rem;
 }
 
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+}
+
+button {
+  padding: 1.2rem 2.4rem;
+}
+
 form {
+    background-color: #fff;
+    padding: 2.4rem;
+    display: grid;
     font-size: 1.6rem;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    justify-items: start;
 }
