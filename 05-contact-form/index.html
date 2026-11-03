@@ -11,55 +11,57 @@
 </head>
 <body>
     <div class="content-wrapper">
-        <form action="https://httpbin.org" method="post"> <!--- Action is like where is the librarian going to place the book, 'the location', in which category (maths, science) -->
-            <h1>Contact Us</h1>
+        <main>
+            <form action="https://httpbin.org" method="post"> <!--- Action is like where is the librarian going to place the book, 'the location', in which category (maths, science) -->
+                <h1>Contact Us</h1>
             
-            <div class="user-input">
-                <div class="user-name-and-last-name">
-                    <div class="name">
-                        <label for="user-name">First Name *</label>
-                        <input id="user-name" type="text" name="user-name" maxlength="15" minlength="4" required>
-                    </div>
-                
-                    <div class="surname">
-                        <label for="user-last-name">Last Name *</label>
-                        <input id="user-last-name" type="text" name="user-last-name" maxlength="15" minlength="4" required>
-                    </div>
-                </div>
-                
-                
-                <div class="email">
-                    <label for="user-email">Email *</label>
-                    <input id="user-email" type="email" name="user-email">
-                </div>
-                
-                <fieldset> <!-- It tells the browser (and assistive technologies like screen readers) that everything inside this container belongs to the same topic. -->
-                    <legend>Query Type *</legend> <!-- t provides the overarching "umbrella text" or question for the grouped inputs. -->
-                
-                    <div class="queries">
-                        <div class="query-1">
-                            <input id="general-enquiry" type="radio" name="query" value="enquiry">
-                            <label for="general-enquiry">General Enquiry</label>
+                <div class="user-input">
+                    <div class="user-name-and-last-name">
+                        <div class="name">
+                            <label for="user-name">First Name *</label>
+                            <input id="user-name" type="text" name="user-name" maxlength="15" minlength="4" required>
                         </div>
-                        <div class="query-2">
-                            <input id="support-request" type="radio" name="query" value="request">
-                            <label for="support-request">Support Request</label>
+            
+                        <div class="surname">
+                            <label for="user-last-name">Last Name *</label>
+                            <input id="user-last-name" type="text" name="user-last-name" maxlength="15" minlength="4" required>
                         </div>
                     </div>
-                </fieldset>
-                <div class="message">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="user-message" rows="5" cols="30" required></textarea>
+            
+            
+                    <div class="email">
+                        <label for="user-email">Email *</label>
+                        <input id="user-email" type="email" name="user-email">
+                    </div>
+            
+                    <fieldset> <!-- It tells the browser (and assistive technologies like screen readers) that everything inside this container belongs to the same topic. -->
+                        <legend>Query Type *</legend> <!-- t provides the overarching "umbrella text" or question for the grouped inputs. -->
+            
+                        <div class="queries">
+                            <div class="query-1">
+                                <input id="general-enquiry" type="radio" name="query" value="enquiry">
+                                <label for="general-enquiry">General Enquiry</label>
+                            </div>
+                            <div class="query-2">
+                                <input id="support-request" type="radio" name="query" value="request">
+                                <label for="support-request">Support Request</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="message">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="user-message" rows="5" cols="30" required></textarea>
+                    </div>
+            
+                    <div class="user-agrees">
+                        <input id="agree-terms" type="checkbox" name="agree" required>
+                        <label for="agree-terms">I consent to being contacted by the team</label>
+                    </div>
+            
+                    <button type="submit">Submit</button>
                 </div>
-                
-                <div class="user-agrees">
-                    <input id="agree-terms" type="checkbox" name="agree" required>
-                    <label for="agree-terms">I consent to being contacted by the team</label>  
-                </div>
-                
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+            </form>
+        </main>
     </div>
 </body>
 </html>
