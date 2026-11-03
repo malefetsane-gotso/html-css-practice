@@ -66,6 +66,8 @@ h1 {
     margin-top: 0.4rem;
     width: 30rem;
     padding: 0.8rem 1.6rem;
+    border: 1px solid #86A5A7;
+    border-radius: 4px;
 }
 
 .email {
@@ -77,6 +79,9 @@ h1 {
 #user-email {
   padding: 0.8rem 1.6rem;
   width: 61.6rem;
+  border: 1px solid #86A5A7;
+  border-radius: 4px;
+  
 }
 
 legend {
@@ -90,10 +95,12 @@ legend {
 
 .query-1, .query-2 {
   display: flex;
-  border: 1px solid #000;
+  border: 1px solid #86A5A7;
+  border-radius: 4px;
   padding: 0.8rem 1.6rem;
   gap: 0.8rem;
   width: 30rem;
+
 }
 
 .message {
@@ -106,9 +113,12 @@ legend {
 }
 
 textarea {
-  min-height: 10rem;     /* at least 120px tall */
+  min-height: 10rem;
+  max-height: 20rem;     /* at least 120px tall */
   padding: 0.8rem 1.6rem;
   resize: vertical;      /* user can drag taller, but never wider */
+  border-radius: 4px;
+  border: 1px solid #86A5A7;
 }
 
 .user-agrees {
