@@ -28,6 +28,11 @@ body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   background-color: #87A3A6;
+
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 100vh;       /* Makes the body exactly as tall as the screen view */
 }
 
 /* Remove list markers globally (Optional) */
@@ -68,6 +73,7 @@ h1 {
     padding: 0.8rem 1.6rem;
     border: 1px solid #86A5A7;
     border-radius: 4px;
+    outline: none; /* Removes the default browser focus outline */
 }
 
 .email {
@@ -81,6 +87,7 @@ h1 {
   width: 61.6rem;
   border: 1px solid #86A5A7;
   border-radius: 4px;
+  outline: none; /* Removes the default browser focus outline */
   
 }
 
@@ -119,6 +126,7 @@ textarea {
   resize: vertical;      /* user can drag taller, but never wider */
   border-radius: 4px;
   border: 1px solid #86A5A7;
+  outline: none; /* Removes the default browser focus outline */
 }
 
 .user-agrees {
@@ -152,10 +160,30 @@ form {
     width: fit-content;
     max-width: 100%;        /* safety: never overflow the screen */
     border-radius: 16px;
+    justify-content: center;
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%; /* Ensures the main section spans the full width of the wrapper */
+}
+
+button:hover, button:active {
+  background-color: #075345;
+}
+
+#user-name:focus,
+#user-last-name:focus,
+#user-email:focus,
+textarea:focus {
+  border: 2px solid #075345;
+}
+
+/* Change the card container's background color when its internal radio button is selected */
+.query-1:has(#general-enquiry:checked), 
+.query-2:has(#support-request:checked) {
+  background-color: #DFF1E7; /* Light green tint matching your theme */
+  border: 1px solid #0C7D69;   /* Optional: changes border color to match */
 }
