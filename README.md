@@ -25,6 +25,7 @@ design, and document my progress through consistent hands-on coding.
 -EXERCISE: 03-product-card - FOCUS: Image positioning, flexbox, typography, colors - STATUS: completed
 -EXERCISE: 04-responsive-card-layout - FOCUS: css grid, responsive layout and positioning - STATUS: completed
 -EXERCISE: 05-contact-form -FOCUS: Building a form, focus states -STATUS: completed
+-EXERCISE: 06-hompage -FOCUS: layout composition, alignemnt, spacing etc -STATUS: in progress
 
 This will be updated as I complete new exercises
 
