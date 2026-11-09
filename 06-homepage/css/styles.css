@@ -25,7 +25,7 @@ a {
 
 /* Add font family style and background color for the page */
 body {
-  font-family: 'Karla', sans-serif;
+  /* font-family: 'Fraunces', sans-serif; */
   font-weight: 400;
   font-size: 1.4rem;
   /* background-color: #87A3A6; */
@@ -36,15 +36,42 @@ ol, ul {
   list-style: none;
 }
 
+/* --- ASIDE --- */
 aside {
     display: flex;
     flex-direction: column;
     align-items: start;
     height: 100vh; /* Takes up the full viewport height */
     justify-content: space-between;
+    padding: 2rem;
+    width:fit-content;
+    border-right: 2px solid var(--neutral-200);
 }
 
-/* lets first style the left panel structure elements to have a clear view */
+
+/* ##bottom */
+.side-footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: var(--sun-300);
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-top: 2px dashed var(--neutral-200);
+  padding-top: 1.2rem;
+}
 
 :root {
   /* --- COLORS --- */
