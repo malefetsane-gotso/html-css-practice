@@ -27,6 +27,7 @@ a {
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  font-size: 1.4rem;
   /* background-color: #87A3A6; */
 }
 
@@ -39,7 +40,40 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* gap: 2.4rem; */
+    height: 100vh; /* Takes up the full viewport height */
+    justify-content: space-between;
 }
 
 /* lets first style the left panel structure elements to have a clear view */
+
+:root {
+  /* --- COLORS --- */
+  /* ### neutral */
+  --neutral-0: #ffffff;      /* Pure White */
+  --neutral-50: #fdfbf7;     /* Alabaster */
+  --neutral-100: #fbf6ef;    /* Cream */
+  --neutral-200: #f1ede9;    /* Oatmeal */
+  --neutral-400: #e3ddd3;    /* Sand */
+  --neutral-600: #7a6a57;    /* Taupe */
+  --neutral-700: #594b3b;    /* Earth */
+  --neutral-800: #3e3428;    /* Espresso */
+  --neutral-900: #2c2721;    /* Charcoal */
+
+  /* ##sun */
+  --sun-50: #fff4db;         /* Dawn */
+  --sun-200: #ffde7a;        /* Amber */
+  --sun-300: #f5d88a;        /* Butter */
+  --sun-500: #edb73b;        /* Sol */
+
+  /* ##terracotta */
+  --terracotta-400: #e0793e; /* Clay */
+  --terracotta-500: #c25a2e; /* Rust */
+  --terracotta-600: #b6421b; /* Brick */
+  --terracotta-700: #9f3e1d; /* Crimson */
+
+  /* ##blue */
+  --blue-500: #586ac6;       /* Cobalt */
+
+  /* ##rose */
+  --rose-500: #bf4a71;       /* Blush */
+}
