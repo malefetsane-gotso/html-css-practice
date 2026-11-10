@@ -123,6 +123,51 @@ aside {
   padding-top: 1.2rem;
 }
 
+/* --- HERO SECTION --- */
+/* ##header */
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  /* width: 100%; */
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap:0.8rem; 
+}
+
+#print-btn {
+  background-color: var(--neutral-0);
+  padding: 0.8rem;
+  border-radius: 100px;
+  border: 1px solid var(--neutral-400);
+}
+
+#calender-btn {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+  padding: 0.8rem;
+  border-radius: 100px;
+}
+
+/* --- MAIN --- */
+main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* .content-wrapper {
+  width: 100%;
+} */
+
+
 :root {
   /* --- COLORS --- */
   /* ### neutral */
