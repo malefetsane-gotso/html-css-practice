@@ -42,6 +42,7 @@ aside {
     flex-direction: column;
     align-items: stretch;
     height: 100vh; /* Takes up the full viewport height */
+    min-width: 26rem; /* gives the sidebar its width; remove it to size from content only */
     justify-content: space-between;
     padding: 2rem;
     width:fit-content;
@@ -50,7 +51,7 @@ aside {
 
 /* ##top */
 .logo {
-  max-width: 85px;
+  max-width: 8.5rem;
   width: 100%;
   margin-bottom: 0.8rem;
 }
@@ -59,68 +60,135 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.2rem;
-  border-top: 2px solid var(--neutral-200);
-  padding-top: 0.8rem;
+  gap: 0.4rem;
+  /* border-top: 2px solid var(--neutral-200); */
+  padding-top: 1.6rem;
+  border-top: 0.1rem solid var(--neutral-400);
   /* width: 100%; */
 }
 
-.nav-links a {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#link-1 {
+/* ##nav item */
+.nav-links li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--neutral-0);
-  padding: 0.4rem;
-  border-radius: 4px;
-  /* width: 100%; */
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
 }
 
-.badge {
-  width: 1rem;
-  height: 1rem;
-  /* flex-shrink: 0; */
-  
+.nav-links li:hover {
+  background-color: var(--neutral-200);
+}
+
+/* ##Nav link (icon + text) */
+.nav-links a {
   display: flex;
+  flex: 1; /* link fills the row so the badge is pushed to the far right */
   align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  padding: 0.6rem 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--neutral-700);
+}
+
+.nav-links a img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* ##Active item (Your stay) */
+#link-1,
+#link-1:hover {
+  background-color: var(--neutral-0);
+  box-shadow: 0 0.1rem 0.3rem #2c27211a;
+}
+
+#link-1 a {
+  color: var(--neutral-900);
+}
+
+/* ##Badge */
+.badge {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
   background-color: var(--terracotta-600);
-  color: white;
-  font-size: 0.65rem;
+  border-radius: 50%;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1;
-  border-radius: 50%;
+  color: var(--neutral-0);
 }
 
-
-/* ##bottom */
+/* --- Footer area (container) --- */
 .side-footer-card {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.6rem;
+}
+
+.weather-card p:nth-child(1) {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neutral-700);
+}
+
+.weather-card p:nth-child(2) {
+  font-family: "Fraunces", serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 .weather-card {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 0.8rem;
-  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  overflow: hidden;
   background-color: var(--sun-300);
+  border-radius: 1.2rem;
+  color: var(--neutral-900);
+}
+
+.weather-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.weather-card__sun {
+  flex-shrink: 0; /* stops the image being squashed by the text */
+  width: 7rem;
+  height: 7rem;
+  margin: -2.4rem -2.4rem 0 0; /* pulls the sun past the padding so the card edge crops it */
 }
 
 .footer-legal {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  border-top: 2px dashed var(--neutral-200);
-  padding-top: 1.2rem;
+  padding-top: 1.6rem;
+  border-top: 0.1rem dashed var(--neutral-400);
+}
+
+.footer-legal p {
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--neutral-600);
 }
 
 /* --- HERO SECTION --- */
@@ -128,9 +196,8 @@ aside {
 header {
   display: flex;
   flex-direction: column;
-  padding: 3.2rem;
+  padding: 2.4rem;
   gap: 0.8rem;
-  /* width: 100%; */
 }
 
 /* ##booking label */
@@ -204,7 +271,6 @@ header {
 .receipt {
   display: flex;
   flex-direction: column;
-  align-self: flex-start; /* stops the card stretching to the parent's width */
   width: fit-content;
   gap: 0.8rem;
   padding: 2.4rem 2.4rem;
@@ -380,11 +446,11 @@ main {
 .hero-cards {
   display: flex;
   flex-direction: row;
+  flex: 1;
   align-items: center;
   justify-content: center;
   padding: 0 3.2rem;
 }
-
 
 /* --- Welcome card (container) --- */
 .welcome {
@@ -470,6 +536,13 @@ main {
   font-family: "Fraunces", serif;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/* --- Hero section (container) --- */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 /* .content-wrapper {
   width: 100%;
