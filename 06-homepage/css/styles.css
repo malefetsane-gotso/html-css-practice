@@ -157,6 +157,74 @@ header ul {
   border-radius: 100px;
 }
 
+/* --- Receipt card ---*/
+.receipt-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.6rem;
+  background-color: var(--neutral-0);
+  width: fit-content;
+  border-radius: 12px;
+}
+/* ##receipt card header */
+.receipt-card__header {
+  display:flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.receipt-card__meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.receipt-card__title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ##dates */
+.receipt-card__dates {
+  display: flex;
+  justify-content: space-around;
+}
+
+.receipt-card__date-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* ##line Items / Breakdown Section */
+.receipt-card__items {
+  display:flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.receipt-card__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+/* ## footer / total section */
+.receipt-card__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.receipt-card__total-row {
+  display: flex;
+}
+
+.receipt-card__payment-info {
+  display: flex;
+}
+
 /* --- MAIN --- */
 main {
   display: grid;
