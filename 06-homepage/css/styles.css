@@ -544,6 +544,82 @@ main {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* Hero Footer Wrapper */
+.hero-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  padding: 0 3.2rem 3.2rem;
+}
+
+/* ##Info card (container) */
+.info-card {
+  --accent: var(--terracotta-600); /* default, overridden per card below */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+  background-color: var(--neutral-50);
+  border: 0.1rem solid var(--neutral-400);
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 1.6rem #2c27210d;
+  font-family: "DM Sans", sans-serif;
+  color: var(--neutral-900);
+}
+
+/* ##accent colour per card */
+.info-card--arrival   { --accent: var(--terracotta-600); }
+.info-card--wifi      { --accent: var(--blue-500); }
+.info-card--breakfast { --accent: var(--rose-500); }
+
+/* ##top row (icon + label + number) */
+.info-card__top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.info-card__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: var(--accent);
+  border-radius: 0.8rem;
+}
+
+.info-card__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.info-card__label {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.info-card__number {
+  margin-left: auto; /* pushes the number to the far right */
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* ##text */
+.info-card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* .content-wrapper {
   width: 100%;
 } */
