@@ -40,13 +40,15 @@ ol, ul {
 aside {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     height: 100vh; /* Takes up the full viewport height */
     min-width: 26rem; /* gives the sidebar its width; remove it to size from content only */
     justify-content: space-between;
     padding: 2rem;
     width:fit-content;
+    position: sticky;
+    top: 0;
     border-right: 2px solid var(--neutral-200);
+    align-self: start; /* stops the grid from stretching it */
 }
 
 /* ##top */
@@ -196,8 +198,8 @@ aside {
 header {
   display: flex;
   flex-direction: column;
-  padding: 2.4rem;
-  gap: 0.8rem;
+  padding: 3.2rem 4rem 0;
+  gap: 1rem;
 }
 
 /* ##booking label */
@@ -272,14 +274,15 @@ header {
   display: flex;
   flex-direction: column;
   width: fit-content;
-  gap: 0.8rem;
-  padding: 2.4rem 2.4rem;
+  /* gap: 0.8rem; */
   background: #fffdf8;
-  border-radius: 1.2rem;
   box-shadow: 0 1.2rem 3rem #0000001f;
   font-family: "DM Sans", sans-serif;
   color: #2a2420;
-  transform: rotate(-5deg); 
+  gap: 1.2rem;
+  padding: 3rem;
+  border-radius: 1.4rem;
+  transform: rotate(-4deg);
 }
 
 /* ##header */
@@ -290,7 +293,7 @@ header {
   align-items: flex-start;
   gap: 2.4rem;
   margin: 0; /* resets anything inherited from a global header rule */
-  padding: 0 0 1.2rem; /* cancels the 3.2rem from the global header rule */
+  padding: 0 0 1.6rem; /* cancels the 3.2rem from the global header rule */
   /* padding-bottom: 1.2rem; */
   border-bottom: 0.1rem dashed #cfc6b8;
 }
@@ -302,17 +305,16 @@ header {
 }
 
 .receipt__label {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #8a8178;
 }
 
-
 .receipt__title {
   margin: 0;
   font-family: "Fraunces", serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -321,7 +323,7 @@ header {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.08em;
   color: #8a8178;
   margin-left: auto; /* pushes this block to the far right */
@@ -331,7 +333,7 @@ header {
 .receipt__dates {
   display: flex;
   justify-content: center;
-  gap: 3.2rem;
+  gap: 4rem;
 }
 
 .receipt__date {
@@ -342,7 +344,7 @@ header {
 }
 
 .receipt__date-label {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #8a8178;
@@ -350,12 +352,12 @@ header {
 
 .receipt__date-value {
   font-family: "Fraunces", serif;
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   font-weight: 500;
 }
 
 .receipt__date-meta {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #8a8178;
 }
 
@@ -363,18 +365,18 @@ header {
 .receipt__items {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
   margin: 0;
-  padding: 1.2rem 0 0;
   list-style: none;
   border-top: 0.1rem dashed #cfc6b8;
+  padding-top: 1.6rem;
+  gap: 1.2rem;
 }
 
 .receipt__item {
   display: flex;
   justify-content: space-between;
-  gap: 8rem; /* the room-name row is the longest, so this gap drives the width */
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  gap: 6rem;
 }
 
 .receipt__item-price {
@@ -387,19 +389,19 @@ header {
   justify-content: space-between;
   align-items: baseline;
   gap: 2.4rem;
-  padding-top: 1.2rem;
+  padding-top: 1.6rem;
   border-top: 0.1rem solid #2a2420;
 }
 
 .receipt__total-label {
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .receipt__total-amount {
   font-family: "Fraunces", serif;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 500;
 }
 
@@ -412,7 +414,7 @@ header {
 }
 
 .receipt__payment {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #8a8178;
@@ -423,7 +425,7 @@ header {
   display: flex;
   align-items: stretch;
   gap: 0.2rem;
-  height: 2.2rem;
+  height: 2.8rem;
 }
 
 .receipt__barcode span {
@@ -443,23 +445,24 @@ header {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 0 3.2rem;
+  padding: 2.4rem 4rem;
 }
 
 /* --- Welcome card (container) --- */
 .welcome {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  margin-left: -1rem;
-  padding: 2.4rem;
+  gap: 2.4rem;
+  min-height: 41rem;
+  margin-left: -1.6rem;
+  padding: 3rem;
   background: linear-gradient(160deg, #d2672f, #a8401a);
-  border-radius: 1.8rem;
+  border-radius: 2rem;
   box-shadow: 0 1.8rem 4.5rem #a8401a4d;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
   width: fit-content;
-  transform: rotate(5deg); 
+  transform: rotate(4deg);
 }
 
 /* ##top row */
@@ -468,20 +471,20 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2.4rem;
-  padding-top: 1.2rem;
+  padding-top: 1.4rem;
   border-top: 0.1rem dashed #ffffff59;
 }
 
 .welcome__label {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #ffffffb3;
 }
 
 .welcome__sun {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 4rem; 
+  height: 4rem; 
 }
 
 /* note */
@@ -493,21 +496,21 @@ header {
 
 .welcome__intro {
   font-family: "Fraunces", serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-style: italic;
   color: #ffd166;
 }
 
 .welcome__name {
   font-family: "Fraunces", serif;
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   font-style: italic;
   font-weight: 500;
 }
 
 .welcome__text {
-  max-width: 26rem; /* this is what sets the card width */
-  font-size: 1.2rem;
+  max-width: 34rem; /* this is what sets the card width */
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #fff4db;
 }
@@ -517,10 +520,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  margin-top: auto;
 }
 
 .welcome__room-label {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #ffffffb3;
@@ -528,7 +532,7 @@ header {
 
 .welcome__room-name {
   font-family: "Fraunces", serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -539,12 +543,27 @@ header {
   min-height: 100vh;
 }
 
+/* --- HOVER TO FAN" caption (new) ---- */
+.hero-hint {
+  margin-bottom: 2.4rem;
+  text-align: center;
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--neutral-600);
+}
+
+.hero-hint span {
+  color: var(--terracotta-600);
+}
+
 /* Hero Footer Wrapper */
 .hero-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-  padding: 0 3.2rem 3.2rem;
+  padding: 0 4rem 3.2rem;
 }
 
 /* ##Info card (container) */
@@ -553,7 +572,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: 2rem;
+  padding: 2rem 2rem 2.4rem;
   background-color: var(--neutral-50);
   border: 0.1rem solid var(--neutral-400);
   border-radius: 1.6rem;
@@ -572,7 +591,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.4rem; /* more space above the title */
 }
 
 .info-card__icon-box {
@@ -609,15 +628,20 @@ header {
 /* ##text */
 .info-card__title {
   font-family: "Fraunces", serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
+.info-card__subtitle {
+  font-size: 1.1rem;
+  color: var(--neutral-600);
+}
+
 .info-card__text {
-  margin-top: 0.8rem;
+  margin-top: 1.2rem;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--neutral-700);
 }
 
