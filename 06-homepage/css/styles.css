@@ -436,12 +436,6 @@ header {
   width: 0.4rem;
 }
 
-/* --- MAIN --- */
-main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
 /* --- Hero cards (wrapper) --- */
 .hero-cards {
   display: flex;
@@ -620,10 +614,78 @@ main {
   line-height: 1.2;
 }
 
+.info-card__text {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--neutral-700);
+}
+
+/* ##wifi details list */
+.info-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.info-card__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--neutral-200);
+  border-radius: 0.6rem;
+}
+
+.info-card__detail-label {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neutral-600);
+}
+
+.info-card__detail-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.info-card__detail-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--neutral-900);
+}
+
+.info-card__copy {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--neutral-0);
+  border: none;
+  border-radius: 0.4rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--neutral-700);
+  cursor: pointer;
+}
+
+.info-card__copy:hover {
+  background-color: var(--accent);
+  color: var(--neutral-0);
+}
+
 /* .content-wrapper {
   width: 100%;
 } */
 
+/* --- MAIN --- */
+main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
 
 :root {
   /* --- COLORS --- */
